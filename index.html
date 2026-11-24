@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c35">
+  <meta name="description" content="منصة الرازي الذكية لإدارة العمليات الأكاديمية والخدمات الجامعية — مشروع أكاديمي مستقل من تصميم إدريس محمد صالح علي شرف الدين.">
+  <title>الرازي | منصة الإدارة الجامعية الذكية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><span>R</span><i></i></div>
+        <div class="brand-copy"><strong>الرازي</strong><small>منصة الإدارة الجامعية</small></div>
+        <button class="icon-btn sidebar-close" id="closeSidebar" aria-label="إغلاق القائمة">×</button>
+      </div>
+      <div class="workspace-chip"><span class="pulse"></span><span>بيئة تجريبية</span><span class="chip-dot">●</span></div>
+      <nav class="side-nav" id="sideNav" aria-label="التنقل الرئيسي">
+        <div class="nav-caption">القائمة الرئيسية</div>
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">◫</span><span>لوحة القيادة</span><kbd>01</kbd></button>
+        <div class="nav-caption">الشؤون الأكاديمية</div>
+        <button class="nav-item" data-page="students"><span class="nav-icon">♙</span><span>الطلاب</span><kbd>02</kbd></button>
+        <button class="nav-item" data-page="faculty"><span class="nav-icon">♧</span><span>أعضاء هيئة التدريس</span><kbd>03</kbd></button>
+        <button class="nav-item" data-page="departments"><span class="nav-icon">▦</span><span>الكليات والأقسام</span><kbd>04</kbd></button>
+        <button class="nav-item" data-page="courses"><span class="nav-icon">▤</span><span>البرامج والمقررات</span><kbd>05</kbd></button>
+        <button class="nav-item" data-page="schedules"><span class="nav-icon">▦</span><span>الجداول الدراسية</span><kbd>06</kbd></button>
+        <button class="nav-item" data-page="exams"><span class="nav-icon">▣</span><span>الاختبارات والدرجات</span><kbd>07</kbd></button>
+        <button class="nav-item" data-page="attendance"><span class="nav-icon">◷</span><span>الحضور والغياب</span><kbd>08</kbd></button>
+        <div class="nav-caption">الخدمات الطلابية</div>
+        <button class="nav-item" data-page="finance"><span class="nav-icon">＄</span><span>الرسوم والمدفوعات</span><kbd>09</kbd></button>
+        <button class="nav-item" data-page="library"><span class="nav-icon">▥</span><span>المكتبة</span><kbd>10</kbd></button>
+        <button class="nav-item" data-page="labs"><span class="nav-icon">⌘</span><span>المختبرات</span><kbd>11</kbd></button>
+        <button class="nav-item" data-page="activities"><span class="nav-icon">✧</span><span>الأنشطة والأندية</span><kbd>12</kbd></button>
+        <button class="nav-item" data-page="housing"><span class="nav-icon">⌂</span><span>السكن الجامعي</span><kbd>13</kbd></button>
+        <button class="nav-item" data-page="transport"><span class="nav-icon">⌖</span><span>النقل والمواصلات</span><kbd>14</kbd></button>
+        <button class="nav-item" data-page="cafeteria"><span class="nav-icon">☕</span><span>المقصف والخدمات</span><kbd>15</kbd></button>
+        <button class="nav-item" data-page="parking"><span class="nav-icon">P</span><span>مواقف السيارات</span><kbd>16</kbd></button>
+        <button class="nav-item" data-page="inventory"><span class="nav-icon">▣</span><span>المخازن والعُهد</span><kbd>17</kbd></button>
+        <div class="nav-caption">الإدارة والتحليل</div>
+        <button class="nav-item" data-page="announcements"><span class="nav-icon">◉</span><span>الإعلانات والتنبيهات</span><kbd>18</kbd></button>
+        <button class="nav-item" data-page="reports"><span class="nav-icon">▧</span><span>التقارير والإحصاءات</span><kbd>19</kbd></button>
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span>الإعدادات</span><kbd>20</kbd></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><strong>تحتاج إلى مساعدة؟</strong><p>راجع دليل المنصة لمعرفة طريقة الاستخدام.</p><a href="docs/MODULES_AR.md" target="_blank">فتح دليل الاستخدام <span>←</span></a></div>
+        <div class="mini-profile"><div class="avatar">إم</div><div><strong>إدريس شرف الدين</strong><small>مشرف العرض التجريبي</small></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-right"><button class="icon-btn mobile-menu" id="openSidebar" aria-label="فتح القائمة">☰</button><div class="crumb"><span>الرازي</span><b>/</b><strong id="crumbTitle">لوحة القيادة</strong></div></div>
+        <div class="topbar-left">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="ابحث عن طالب، مقرر، أو خدمة..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <button class="icon-btn notification-btn" id="notificationBtn" aria-label="التنبيهات">♧<i></i></button>
+          <div class="top-avatar">إ</div>
+        </div>
+      </header>
+
+      <section class="page-content" id="pageContent">
+        <div class="welcome-row">
+          <div><div class="eyebrow"><span></span> الثلاثاء، 24 نوفمبر 2026</div><h1>مرحباً إدريس، <em>أهلاً بك من جديد.</em></h1><p>هذه نظرة شاملة على ما يحدث في المنظومة الجامعية اليوم.</p></div>
+          <div class="welcome-actions"><button class="btn btn-light" id="exportBtn">⇩ تصدير البيانات</button><button class="btn btn-primary" id="quickAddBtn"><span>＋</span> إضافة سجل جديد</button></div>
+        </div>
+        <div class="demo-alert"><span class="alert-symbol">ⓘ</span><div><strong>نسخة استعراضية مستقلة</strong><span>هذه واجهة نموذجية لمشروع أكاديمي، وليست بوابة رسمية لجامعة الرازي. الأرقام والسجلات المعروضة بيانات تجريبية غير حقيقية.</span></div><button id="dismissAlert" aria-label="إخفاء التنبيه">×</button></div>
+        <div class="stats-grid" id="statsGrid">
+          <article class="stat-card"><div class="stat-top"><span class="stat-label">إجمالي الطلاب</span><span class="stat-icon purple">♙</span></div><div class="stat-value" data-count="4286">4,286</div><div class="stat-foot"><span class="trend up">↗ 8.4%</span><span>مقارنة بالفصل السابق</span></div><div class="sparkline purple-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-label">أعضاء هيئة التدريس</span><span class="stat-icon blue">♧</span></div><div class="stat-value" data-count="186">186</div><div class="stat-foot"><span class="trend up">↗ 3.2%</span><span>عن العام الماضي</span></div><div class="sparkline blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-label">المقررات النشطة</span><span class="stat-icon amber">▤</span></div><div class="stat-value" data-count="324">324</div><div class="stat-foot"><span class="trend neutral">● مستقرة</span><span>للفصل الحالي</span></div><div class="sparkline amber-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-label">نسبة الحضور اليوم</span><span class="stat-icon green">◷</span></div><div class="stat-value">94.8<span class="percent">%</span></div><div class="stat-foot"><span class="trend up">↗ 1.6%</span><span>من إجمالي المسجلين</span></div><div class="sparkline green-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </div>
+        <div class="dashboard-grid">
+          <section class="panel performance-panel"><div class="panel-heading"><div><h2>النشاط الأكاديمي</h2><p>مؤشرات التسجيل خلال الأشهر الماضية</p></div><select id="chartPeriod" aria-label="الفترة"><option>آخر 7 أشهر</option><option>هذا الفصل</option><option>هذا العام</option></select></div><div class="chart-legend"><span><i class="legend-a"></i> تسجيل الطلاب</span><span><i class="legend-b"></i> إكمال المقررات</span></div><div class="bar-chart" aria-label="مخطط النشاط الأكاديمي"><div class="y-labels"><span>500</span><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span></div><div class="chart-columns"><div class="chart-col"><div class="bars"><i style="height:49%"></i><b style="height:31%"></b></div><span>مايو</span></div><div class="chart-col"><div class="bars"><i style="height:61%"></i><b style="height:43%"></b></div><span>يونيو</span></div><div class="chart-col"><div class="bars"><i style="height:56%"></i><b style="height:39%"></b></div><span>يوليو</span></div><div class="chart-col"><div class="bars"><i style="height:76%"></i><b style="height:57%"></b></div><span>أغسطس</span></div><div class="chart-col"><div class="bars"><i style="height:68%"></i><b style="height:51%"></b></div><span>سبتمبر</span></div><div class="chart-col"><div class="bars"><i style="height:88%"></i><b style="height:62%"></b></div><span>أكتوبر</span></div><div class="chart-col"><div class="bars"><i style="height:94%"></i><b style="height:73%"></b></div><span>نوفمبر</span></div></div></div></section>
+          <section class="panel distribution-panel"><div class="panel-heading"><div><h2>توزيع الطلاب</h2><p>حسب الكليات — بيانات توضيحية</p></div><button class="text-link" data-goto="departments">عرض التفاصيل ←</button></div><div class="donut-wrap"><div class="donut"><div><strong>4,286</strong><small>طالب وطالبة</small></div></div><div class="donut-legend"><div><i class="d1"></i><span>الحاسوب وتقنية المعلومات</span><b>34%</b></div><div><i class="d2"></i><span>العلوم الطبية</span><b>28%</b></div><div><i class="d3"></i><span>العلوم الإدارية</span><b>22%</b></div><div><i class="d4"></i><span>كليات أخرى</span><b>16%</b></div></div></div></section>
+        </div>
+        <div class="lower-grid"><section class="panel activity-panel"><div class="panel-heading"><div><h2>أحدث العمليات</h2><p>آخر التحديثات المسجلة في المنصة</p></div><button class="text-link" data-goto="reports">سجل العمليات ←</button></div><div class="activity-list"><div class="activity-item"><span class="activity-badge violet">♙</span><div><strong>إضافة سجل طالب جديد</strong><small>قسم تقنية المعلومات · قبل 12 دقيقة</small></div><time>10:42 ص</time></div><div class="activity-item"><span class="activity-badge blue-bg">▤</span><div><strong>تحديث بيانات مقرر قواعد البيانات</strong><small>الشؤون الأكاديمية · قبل 38 دقيقة</small></div><time>10:16 ص</time></div><div class="activity-item"><span class="activity-badge green-bg">＄</span><div><strong>تسجيل عملية سداد تجريبية</strong><small>الإدارة المالية · قبل ساعة</small></div><time>9:54 ص</time></div><div class="activity-item"><span class="activity-badge amber-bg">◷</span><div><strong>نشر جدول الاختبارات النصفية</strong><small>وحدة الاختبارات · أمس</small></div><time>أمس</time></div></div></section>
+          <section class="panel events-panel"><div class="panel-heading"><div><h2>التقويم الجامعي</h2><p>المواعيد القادمة — نموذج توضيحي</p></div><button class="text-link" data-goto="schedules">التقويم الكامل ←</button></div><div class="event-list"><div class="event-item"><div class="event-date"><b>28</b><small>نوفمبر</small></div><div><strong>بداية الاختبارات النصفية</strong><small>جميع البرامج الأكاديمية</small></div><span class="event-dot purple-dot"></span></div><div class="event-item"><div class="event-date"><b>02</b><small>ديسمبر</small></div><div><strong>ملتقى المشاريع التقنية</strong><small>كلية الحاسوب وتقنية المعلومات</small></div><span class="event-dot blue-dot"></span></div><div class="event-item"><div class="event-date"><b>10</b><small>ديسمبر</small></div><div><strong>آخر موعد للسداد</strong><small>الرسوم الدراسية للفصل الحالي</small></div><span class="event-dot amber-dot"></span></div></div></section></div>
+        <footer class="main-footer"><span>© 2026 Idris Mohammed Saleh Ali Sharafuddin. جميع الحقوق محفوظة.</span><span>منصة تعليمية تجريبية مستقلة <b>•</b> صُنعت بشغف للتقنية</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="modal-kicker">إدارة البيانات</span><h2 id="modalTitle">إضافة سجل جديد</h2></div><button class="icon-btn" id="closeModal" aria-label="إغلاق">×</button></div><p class="modal-description" id="modalDescription">أدخل المعلومات الأساسية ثم احفظ السجل.</p><form id="recordForm"><div class="form-grid" id="formFields"></div><div class="modal-actions"><button type="button" class="btn btn-light" id="cancelModal">إلغاء</button><button type="submit" class="btn btn-primary">حفظ السجل <span>←</span></button></div></form></section></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
